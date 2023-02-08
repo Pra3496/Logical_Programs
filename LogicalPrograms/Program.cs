@@ -96,6 +96,18 @@
                             Console.Write("\n\n\tDo you want to Continue With Application(Y/N) : ");
                             opt = Console.ReadKey().KeyChar;
                             break;
+                        case 6:
+                            Console.Write("=========================================\n");
+                            Console.Write("\tStopWatch Application\n");
+                            Console.Write("=========================================\n");
+                            StopwatchSimulate stop = new StopwatchSimulate();
+                            stop.StopwatchElapsed();
+                            Console.Write("\n==================END====================\n");
+                            Console.Write("Enter any key to Exit.......");
+                            Console.ReadKey();
+                            Console.Write("\n\n\tDo you want to Continue With Application(Y/N) : ");
+                            opt = Console.ReadKey().KeyChar;
+                            break;
 
                         default:
                                 Console.WriteLine("Please enter right option");
