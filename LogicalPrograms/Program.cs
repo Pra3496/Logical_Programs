@@ -52,13 +52,26 @@
                             Console.Write("\n\n\tDo you want to Continue With Application(Y/N) : ");
                             opt = Console.ReadKey().KeyChar;
                             break;
-                        
-
-                        default:
-                            Console.WriteLine("Please enter right option");
+                        case 3:
+                            Console.Write("=========================================\n");
+                            Console.Write("\tPrime Number Application\n");
+                            Console.Write("=========================================\n");
+                            PrimeNumber prime = new PrimeNumber();
+                            Console.Write("Please enter input number : ");
+                            number = Convert.ToInt32(Console.ReadLine());
+                            prime.PrimeNumbers(number);
+                            Console.Write("\n==================END====================\n");
                             Console.Write("Enter any key to Exit.......");
                             Console.ReadKey();
+                            Console.Write("\n\n\tDo you want to Continue With Application(Y/N) : ");
+                            opt = Console.ReadKey().KeyChar;
                             break;
+
+                        default:
+                                Console.WriteLine("Please enter right option");
+                                Console.Write("Enter any key to Exit.......");
+                                Console.ReadKey();
+                                break;
                     }
                
             }
