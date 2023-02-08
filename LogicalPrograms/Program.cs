@@ -81,8 +81,23 @@
                             Console.Write("\n\n\tDo you want to Continue With Application(Y/N) : ");
                             opt = Console.ReadKey().KeyChar;
                             break;
+                        case 5:
+                            Console.Write("=========================================\n");
+                            Console.Write("\tCoupon Number Application\n");
+                            Console.Write("=========================================\n");
+                            CouponNumber coupon = new CouponNumber();
+                            Console.Write("Enter the number of distinct coupons: ");
+                            number = Convert.ToInt32(Console.ReadLine());
 
-                         default:
+                            Console.WriteLine("Total random numbers needed: " + coupon.CollectCoupons(number));
+                            Console.Write("\n==================END====================\n");
+                            Console.Write("Enter any key to Exit.......");
+                            Console.ReadKey();
+                            Console.Write("\n\n\tDo you want to Continue With Application(Y/N) : ");
+                            opt = Console.ReadKey().KeyChar;
+                            break;
+
+                        default:
                                 Console.WriteLine("Please enter right option");
                                 Console.Write("Enter any key to Exit.......");
                                 Console.ReadKey();
