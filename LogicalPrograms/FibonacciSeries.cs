@@ -18,6 +18,7 @@ namespace LogicalPrograms
                 Console.Write(" " + p3);
                 p1 = p2;
                 p2 = p3;
+                Console.WriteLine();
             }
         }
     }

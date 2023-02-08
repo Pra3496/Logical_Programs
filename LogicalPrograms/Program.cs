@@ -118,7 +118,7 @@
                
             }
                 Console.Clear();
-                Console.Write("\n\n\tThank You For Using Application.......");
+                Console.Write("\n\n\n\tThank You For Using Application.......");
                 Console.ReadKey();
           }
     }
